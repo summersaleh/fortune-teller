@@ -67,25 +67,39 @@ public class FortuneTellerApp {
 		transport = (color);
 		switch (color) {
 
+		case "Red":
 		case "red":
+		case "RED":
 			transport = ("plane");
 			break;
+		case "Orange":
 		case "orange":
+		case "ORANGE":
 			transport = ("car");
 			break;
+		case "Yellow":
 		case "yellow":
+		case "YELLOW":
 			transport = ("flaming chariot");
 			break;
+		case "Green":
 		case "green":
+		case "GREEN":
 			transport = ("train");
 			break;
+		case "BLUE":
 		case "blue":
+		case "Blue":
 			transport = ("unicorn");
 			break;
+		case "INDIGO":
 		case "Indigo":
+		case "indigo":
 			transport = ("roller skates");
 			break;
+		case "Violet":
 		case "violet":
+		case "VIOLET":
 			transport = ("mule");
 			break;
 
