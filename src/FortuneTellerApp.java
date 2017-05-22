@@ -26,10 +26,10 @@ public class FortuneTellerApp {
 		System.out.println("What is your favorite ROYGBIV color? If you don't know what this means type \"Help\".");
 		String color = input.next();
 		checkForQuit(color);
-		
-		if (color.equalsIgnoreCase("red") || color.equalsIgnoreCase("orange") || color.equalsIgnoreCase("yellow")
-				|| color.equalsIgnoreCase("green") || color.equalsIgnoreCase("blue") || color.equalsIgnoreCase("indigo")
-				|| color.equalsIgnoreCase("violet")) {
+
+		if (color.equalsIgnoreCase("Red") || color.equalsIgnoreCase("Orange") || color.equalsIgnoreCase("Yellow")
+				|| color.equalsIgnoreCase("Green") || color.equalsIgnoreCase("Blue") || color.equalsIgnoreCase("Indigo")
+				|| color.equalsIgnoreCase("Violet")) {
 
 		} else if (color.equalsIgnoreCase("help")) {
 			System.out.println(
@@ -42,8 +42,7 @@ public class FortuneTellerApp {
 		String c = input.next();
 		checkForQuit(c);
 		int sibs = Integer.parseInt(c);
-		
-		
+
 		int numberOfYears = 0;
 		if (age % 2 == 0) {
 			numberOfYears = 5;
@@ -64,8 +63,10 @@ public class FortuneTellerApp {
 		} else {
 			vaycay = ("Haiti");
 		}
-		String transport = color;
+		String transport = "none";
+		transport = (color);
 		switch (color) {
+
 		case "red":
 			transport = ("plane");
 			break;
@@ -89,6 +90,7 @@ public class FortuneTellerApp {
 			break;
 
 		}
+
 		String salary = "none";
 		if (birthMonth == 1 || birthMonth == 2 || birthMonth == 3 || birthMonth == 4) {
 			salary = ("$25,000");
@@ -100,16 +102,16 @@ public class FortuneTellerApp {
 			salary = ("$0.00");
 
 		}
-		System.out.println(firstName + " " + lastName + " " + " will retire in " + numberOfYears + " years with "
-				+ salary + " in the bank, a vacation home in " + vaycay + " and a " + transport + ".");
+		System.out.println(firstName + " " + lastName + " will retire in " + numberOfYears + " years with " + salary
+				+ " in the bank, a vacation home in " + vaycay + " and a " + transport + ".");
 		input.close();
-	} 
+	}
 
 	public static void checkForQuit(String input) {
 		if (input.equalsIgnoreCase("quit")) {
 			System.out.println("Nobody likes a quitter...");
 			System.exit(0);
-			
+
 		}
 	}
 }
