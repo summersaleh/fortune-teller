@@ -14,7 +14,7 @@ public class FortuneTellerApp {
 		checkForQuit(lastName);
 
 		System.out.println("What is your age?");
-		String a = input.next();
+		String a = input.next(); 
 		checkForQuit(a);
 		int age = Integer.parseInt(a);
 
